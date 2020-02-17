@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnConnect"
+        android:layout_width="386dp"
+        android:layout_height="50dp"
+        android:text="Connect to server"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvS1"
+        android:layout_width="86dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="32dp"
+        android:text="Sensor 1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnConnect" />
+
+    <EditText
+        android:id="@+id/TextS1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Enter value"
+        app:layout_constraintStart_toEndOf="@+id/tvS1"
+        app:layout_constraintTop_toBottomOf="@+id/btnConnect" />
+
+    <TextView
+        android:id="@+id/tvS2"
+        android:layout_width="90dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="52dp"
+        android:text="Sensor 2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvS1" />
+
+    <EditText
+        android:id="@+id/TextS2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Enter value"
+        app:layout_constraintStart_toEndOf="@+id/tvS2"
+        app:layout_constraintTop_toBottomOf="@+id/TextS1" />
+
+    <TextView
+        android:id="@+id/tvS3"
+        android:layout_width="91dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginRight="14dp"
+        android:text="Sensor 3"
+        app:layout_constraintEnd_toStartOf="@+id/TextS3"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvS2" />
+
+    <EditText
+        android:id="@+id/TextS3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:hint="Enter value"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.53"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TextS2" />
+
+    <TextView
+        android:id="@+id/tvS4"
+        android:layout_width="93dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="64dp"
+        android:text="Sensor 4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvS3" />
+
+    <EditText
+        android:id="@+id/TextS4"
+        android:layout_width="207dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="48dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Enter value"
+        app:layout_constraintStart_toEndOf="@+id/tvS4"
+        app:layout_constraintTop_toBottomOf="@+id/TextS3" />
+
+    <Button
+        android:id="@+id/btnBinary"
+        android:layout_width="350dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="8dp"
+        android:text="Binary Classification"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TextS4" />
+
+    <Button
+        android:id="@+id/btnRegression"
+        android:layout_width="341dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="12dp"
+        android:text="Regression"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnBinary" />
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="324dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="12dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnRegression" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
